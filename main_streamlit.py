@@ -106,6 +106,7 @@ def processar_planilha(planilha_ncm, pasta_saida, data, descricao, imposto, vinc
             
             # Preenche NCMs
             for i, ncm in enumerate(ncms):
+                ws.cell(row=8 + i, column=1, value='NCM')
                 ws.cell(row=8 + i, column=2, value=ncm)
             
             # Salva planilha
